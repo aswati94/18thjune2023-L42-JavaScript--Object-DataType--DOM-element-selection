@@ -1,0 +1,51 @@
+<!dOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+                
+            //Lets create a JS object
+            //JS object is denoted by curly braces-----> {} & can contain many information like name, surname, address, city, pancard
+            // JS object can stored in a variable
+            var student1= {   //student1 is a type of JS object
+                //1. Property:value 
+                fname:"Swati",
+                lname:'Agarwal',
+                age:29,
+                salary:100000,
+                qualification: 'Mtech',
+                address:`B-017 Divya Jyoti Royal County bengaluru`,
+                getMyFullAddress(){ //function declaration
+                console.log("hello "+this.fname+" "+this.age+' '+this.salary+` `+this.address); //function initialization   & "this" is a reference to internal js object and this keyword is used to refer the internal js object
+                }
+            }; 
+            let student2= ''; //student2 is a type of String
+            const student3=10; //student3 is a type of number
+
+            let student4= {   //student1 is a type of JS object
+                //1. Property:value 
+                fname:"Geetika",
+                lname:'Agarwal',
+                age:30,
+                salary:100000,
+                qualification: 'BCom',
+                address: `D2-142 DLF sector 10 faridabad`,
+                getAddress(){
+                    //every function return something
+                    return this.address;
+                }
+            }; 
+
+            //How to access the information from JS object?
+            console.log(student1.fname);
+            console.log(student1.lname);
+            console.log(student1.address);
+            console.log(student1.getMyFullAddress());
+            console.log(student4.getAddress());
+        </script>
+    </body>
+</html>
