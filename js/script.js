@@ -24,10 +24,11 @@ const car2 ={
     type: 'SUV',
     engine:"Diesel",
     price: 1500000,
-
     // 2. Fucntions (Many)
 
 }
-
-
-console.log(car1.getFullDetail());
+console.log(car1.brand); // calling method 1:- objectName.propertyName
+console.log(car2["brand"]);        //         method 2:- objectName["propertyName"]
+let x= "engine";
+console.log(car2[x]);   //object[expression] x is an expression
+   
